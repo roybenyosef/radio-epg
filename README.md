@@ -1,5 +1,9 @@
 # Radio EPG
 
+Good examples:
+* https://github.com/aws-samples/aws-cdk-examples/blob/master/python/lambda-cron/app.py
+* https://docs.aws.amazon.com/code-samples/latest/catalog/welcome.html
+
 ### AWS setup
 * Install aws cli: https://docs.aws.amazon.com/cli/latest/userguide/install-windows.html
   * pip install awscli
@@ -81,4 +85,6 @@ Enjoy!
 * 
 * install boto3: pipenv install boto3
 * pipenv didn't work well, installed with pip: aws_s3, aws_lambda
+* pip install aws_cdk.aws_apigateway aws_cdk.aws_lambda aws_cdk.aws_s3
+* pip install aws-cdk.aws-events-targets
 
