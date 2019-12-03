@@ -1,0 +1,252 @@
+[
+	{
+		"stationName": "100fm",
+		"epg" : 
+		{
+			"Sun": [
+					{
+						"Time" : "0000-0100",
+						"Name" : "Top Hits",
+						"Description" : "אכלתי כל כך הרבה"
+					},
+					{
+						"Time" : "0100-0200",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0200-0000",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					}
+			],
+			"Mon": [
+					{
+						"Time" : "0000-0100",
+						"Name" : "Top Hits",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0100-0200",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0200-0000",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					}
+			],
+			"Tue": [
+					{
+						"Time" : "0000-0100",
+						"Name" : "Top Hits",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0100-0200",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0200-0000",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					}
+			],
+			"Wed": [
+					{
+						"Time" : "0000-0100",
+						"Name" : "Top Hits",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0100-0200",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0200-0000",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					}
+			],
+			"Thu": [
+					{
+						"Time" : "0000-0100",
+						"Name" : "Top Hits",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0100-0200",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0200-0000",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					}
+			],
+			"Fri": [
+					{
+						"Time" : "0000-0100",
+						"Name" : "Top Hits",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0100-0200",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0200-0000",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					}
+			],
+			"Sat": [
+					{
+						"Time" : "0000-0100",
+						"Name" : "Top Hits",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0100-0200",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0200-0000",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					}
+			]
+		}
+	},
+	{
+		"stationName": "91fm",
+		"epg" : 
+		{
+			"Sun": [
+					{
+						"Time" : "0000-0100",
+						"Name" : "Top Hits",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0100-0200",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0200-0000",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					}
+			],
+			"Mon": [
+					{
+						"Time" : "0000-0100",
+						"Name" : "Top Hits",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0100-0200",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0200-0000",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					}
+			],
+			"Tue": [
+					{
+						"Time" : "0000-0100",
+						"Name" : "Top Hits",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0100-0200",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0200-0000",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					}
+			],
+			"Wed": [
+					{
+						"Time" : "0000-0100",
+						"Name" : "Top Hits",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0100-0200",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0200-0000",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					}
+			],
+			"Thu": [
+					{
+						"Time" : "0000-0100",
+						"Name" : "Top Hits",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0100-0200",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0200-0000",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					}
+			],
+			"Fri": [
+					{
+						"Time" : "0000-0100",
+						"Name" : "Top Hits",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0100-0200",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0200-0000",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					}
+			],
+			"Sat": [
+					{
+						"Time" : "0000-0100",
+						"Name" : "Top Hits",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0100-0200",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					},
+					{
+						"Time" : "0200-0000",
+						"Name" : "Top Hits 2",
+						"Description" : "abc"
+					}
+			]
+		}
+	}
+]
