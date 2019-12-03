@@ -10,6 +10,10 @@
 see: https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html
 * install nodejs (add to path)
 * install cdk: 'npm install -g aws-cdk'
+* init the project: cdk init --language python
+* install pipenv: pip install pipenv
+* run pipenv install
+* pipenv shell
 
 ### CDK Notes
 
@@ -70,3 +74,10 @@ command.
  * `cdk docs`        open CDK documentation
 
 Enjoy!
+
+
+## In the CDK project
+* 
+* install boto3: pipenv install boto3
+* 
+
