@@ -80,5 +80,5 @@ Enjoy!
 ## In the CDK project
 * 
 * install boto3: pipenv install boto3
-* 
+* pipenv didn't work well, installed with pip: aws_s3, aws_lambda
 
