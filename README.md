@@ -87,4 +87,6 @@ Enjoy!
 * pipenv didn't work well, installed with pip: aws_s3, aws_lambda
 * pip install aws_cdk.aws_apigateway aws_cdk.aws_lambda aws_cdk.aws_s3
 * pip install aws-cdk.aws-events-targets
+* implement function according to: https://github.com/aws-samples/aws-cdk-examples/blob/master/python/lambda-cron/app.py
+* kill env: cdk destroy
 
