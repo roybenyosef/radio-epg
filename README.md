@@ -8,6 +8,7 @@
 
 ### CDK 
 see: https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html
+* use python 3.7! there's a bug https://github.com/aws/aws-cdk/issues/4699
 * install nodejs (add to path)
 * install cdk: 'npm install -g aws-cdk'
 * init the project: cdk init --language python
