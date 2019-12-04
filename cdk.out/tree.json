@@ -12,16 +12,25 @@
         "id": "radio-epg",
         "path": "radio-epg",
         "children": {
-          "Bucket": {
-            "id": "Bucket",
-            "path": "radio-epg/Bucket",
+          "EpgDataBucket": {
+            "id": "EpgDataBucket",
+            "path": "radio-epg/EpgDataBucket",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "radio-epg/Bucket/Resource",
+                "path": "radio-epg/EpgDataBucket/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
                   "aws:cdk:cloudformation:props": {
+                    "bucketName": "epg-data-s3-bucket-42",
+                    "lifecycleConfiguration": {
+                      "rules": [
+                        {
+                          "noncurrentVersionExpirationInDays": 3,
+                          "status": "Enabled"
+                        }
+                      ]
+                    },
                     "versioningConfiguration": {
                       "status": "Enabled"
                     }
@@ -30,7 +39,69 @@
               },
               "Notifications": {
                 "id": "Notifications",
-                "path": "radio-epg/Bucket/Notifications"
+                "path": "radio-epg/EpgDataBucket/Notifications"
+              }
+            }
+          },
+          "EpgOutBucket": {
+            "id": "EpgOutBucket",
+            "path": "radio-epg/EpgOutBucket",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "radio-epg/EpgOutBucket/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {
+                    "bucketName": "epg-out-s3-bucket-42"
+                  }
+                }
+              },
+              "Notifications": {
+                "id": "Notifications",
+                "path": "radio-epg/EpgOutBucket/Notifications"
+              },
+              "Policy": {
+                "id": "Policy",
+                "path": "radio-epg/EpgOutBucket/Policy",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "radio-epg/EpgOutBucket/Policy/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::S3::BucketPolicy",
+                      "aws:cdk:cloudformation:props": {
+                        "bucket": {
+                          "Ref": "EpgOutBucket071554AF"
+                        },
+                        "policyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "s3:GetObject",
+                              "Effect": "Allow",
+                              "Principal": "*",
+                              "Resource": {
+                                "Fn::Join": [
+                                  "",
+                                  [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "EpgOutBucket071554AF",
+                                        "Arn"
+                                      ]
+                                    },
+                                    "/*"
+                                  ]
+                                ]
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           },
@@ -99,7 +170,7 @@
                                   "Resource": [
                                     {
                                       "Fn::GetAtt": [
-                                        "Bucket83908E77",
+                                        "EpgDataBucketED941078",
                                         "Arn"
                                       ]
                                     },
@@ -109,7 +180,40 @@
                                         [
                                           {
                                             "Fn::GetAtt": [
-                                              "Bucket83908E77",
+                                              "EpgDataBucketED941078",
+                                              "Arn"
+                                            ]
+                                          },
+                                          "/*"
+                                        ]
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Action": [
+                                    "s3:GetObject*",
+                                    "s3:GetBucket*",
+                                    "s3:List*",
+                                    "s3:DeleteObject*",
+                                    "s3:PutObject*",
+                                    "s3:Abort*"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": [
+                                    {
+                                      "Fn::GetAtt": [
+                                        "EpgOutBucket071554AF",
+                                        "Arn"
+                                      ]
+                                    },
+                                    {
+                                      "Fn::Join": [
+                                        "",
+                                        [
+                                          {
+                                            "Fn::GetAtt": [
+                                              "EpgOutBucket071554AF",
                                               "Arn"
                                             ]
                                           },
@@ -142,7 +246,7 @@
                   "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
                   "aws:cdk:cloudformation:props": {
                     "code": {
-                      "zipFile": "import os\nimport json\nimport boto3\nfrom botocore.exceptions import ClientError\n\nS3 = boto3.client('s3')\n\n\ndef main(event, context):\n    try:\n        response = S3.get_object(Bucket=os.environ['BUCKET_NAME'], Key='epg_data.json')\n        file_content = json.loads(response['Body'].read())\n        print(f'File content: {file_content}')\n    except ClientError as e:\n        raise\n"
+                      "zipFile": "import os\nimport json\nimport boto3\nfrom botocore.exceptions import ClientError\n\nS3 = boto3.client('s3')\n\n\ndef main(event, context):\n    try:\n        response = S3.get_object(Bucket=os.environ['DATA_BUCKET_NAME'], Key='epg_data.json')\n        file_content = json.loads(response['Body'].read())\n        print(f'File content: {file_content}')\n\n        out_data = file_content[0]['epg']['Sun'][0]\n        S3.put_object(Body=out_data, Bucket=os.environ['OUT_BUCKET_NAME'], Key='epg.json')\n\n    except ClientError as e:\n        raise\n"
                     },
                     "handler": "index.main",
                     "role": {
@@ -154,8 +258,11 @@
                     "runtime": "python3.7",
                     "environment": {
                       "variables": {
-                        "BUCKET_NAME": {
-                          "Ref": "Bucket83908E77"
+                        "DATA_BUCKET_NAME": {
+                          "Ref": "EpgDataBucketED941078"
+                        },
+                        "OUT_BUCKET_NAME": {
+                          "Ref": "EpgOutBucket071554AF"
                         }
                       }
                     }
@@ -197,7 +304,7 @@
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::Events::Rule",
                   "aws:cdk:cloudformation:props": {
-                    "scheduleExpression": "cron(0/1 * ? * * *)",
+                    "scheduleExpression": "cron(0/5 * ? * * *)",
                     "state": "ENABLED",
                     "targets": [
                       {

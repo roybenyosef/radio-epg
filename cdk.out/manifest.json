@@ -14,12 +14,50 @@
         "templateFile": "radio-epg.template.json"
       },
       "metadata": {
-        "/radio-epg/Bucket/Resource": [
+        "/radio-epg/EpgDataBucket/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "Bucket83908E77",
+            "data": "EpgDataBucketED941078",
             "trace": [
-              "new Bucket (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-oV2ouk\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:366:26)",
+              "new Bucket (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:366:26)",
+              "C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7749:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8202:20)",
+              "Kernel._create (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7749:26)",
+              "Kernel.create (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7293:28)",
+              "KernelHost.run (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7233:14)",
+              "Immediate._onImmediate (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7236:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/radio-epg/EpgOutBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EpgOutBucket071554AF",
+            "trace": [
+              "new Bucket (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:366:26)",
+              "C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7749:49",
+              "Kernel._wrapSandboxCode (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8202:20)",
+              "Kernel._create (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7749:26)",
+              "Kernel.create (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7293:28)",
+              "KernelHost.run (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7233:14)",
+              "Immediate._onImmediate (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7236:37)",
+              "processImmediate (internal/timers.js:439:21)"
+            ]
+          }
+        ],
+        "/radio-epg/EpgOutBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EpgOutBucketPolicy1B35B6A2",
+            "trace": [
+              "new BucketPolicy (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket-policy.js:21:9)",
+              "Bucket.addToResourcePolicy (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:125:27)",
+              "Function.addToPrincipalOrResource (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.js:40:26)",
+              "Bucket.grantPublicAccess (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:253:26)",
+              "new Bucket (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:403:18)",
               "C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7749:49",
               "Kernel._wrapSandboxCode (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8202:20)",
               "Kernel._create (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7749:26)",
@@ -36,8 +74,8 @@
             "type": "aws:cdk:logicalId",
             "data": "SingletonServiceRoleDDD815CD",
             "trace": [
-              "new Role (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-oV2ouk\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:35:22)",
-              "new Function (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-oV2ouk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:59:35)",
+              "new Role (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:35:22)",
+              "new Function (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:59:35)",
               "C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7749:49",
               "Kernel._wrapSandboxCode (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8202:20)",
               "Kernel._create (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7749:26)",
@@ -54,12 +92,12 @@
             "type": "aws:cdk:logicalId",
             "data": "SingletonServiceRoleDefaultPolicy7525C238",
             "trace": [
-              "new Policy (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-oV2ouk\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.js:29:26)",
-              "Role.addToPolicy (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-oV2ouk\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:153:34)",
-              "Function.addToPrincipal (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-oV2ouk\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.js:54:65)",
-              "Function.addToPrincipalOrResource (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-oV2ouk\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.js:31:30)",
-              "Bucket.grant (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-oV2ouk\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:275:29)",
-              "Bucket.grantRead (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-oV2ouk\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:176:21)",
+              "new Policy (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-iam\\lib\\policy.js:29:26)",
+              "Role.addToPolicy (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.js:153:34)",
+              "Function.addToPrincipal (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.js:54:65)",
+              "Function.addToPrincipalOrResource (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-iam\\lib\\grant.js:31:30)",
+              "Bucket.grant (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:275:29)",
+              "Bucket.grantRead (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-s3\\lib\\bucket.js:176:21)",
               "C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7582:51",
               "Kernel._wrapSandboxCode (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8202:20)",
               "C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7582:25",
@@ -77,7 +115,7 @@
             "type": "aws:cdk:logicalId",
             "data": "Singleton8C7B99F3",
             "trace": [
-              "new Function (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-oV2ouk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:69:26)",
+              "new Function (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.js:69:26)",
               "C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7749:49",
               "Kernel._wrapSandboxCode (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8202:20)",
               "Kernel._create (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7749:26)",
@@ -94,10 +132,10 @@
             "type": "aws:cdk:logicalId",
             "data": "SingletonAllowEventRuleradioepgRuleF21AC6370D9164CE",
             "trace": [
-              "Function.addPermission (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-oV2ouk\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.js:21:9)",
-              "Object.addLambdaPermission (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-oV2ouk\\node_modules\\@aws-cdk\\aws-events-targets\\lib\\util.js:29:17)",
-              "LambdaFunction.bind (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-oV2ouk\\node_modules\\@aws-cdk\\aws-events-targets\\lib\\lambda.js:18:16)",
-              "Rule.addTarget (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-oV2ouk\\node_modules\\@aws-cdk\\aws-events\\lib\\rule.js:68:36)",
+              "Function.addPermission (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.js:21:9)",
+              "Object.addLambdaPermission (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-events-targets\\lib\\util.js:29:17)",
+              "LambdaFunction.bind (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-events-targets\\lib\\lambda.js:18:16)",
+              "Rule.addTarget (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-events\\lib\\rule.js:68:36)",
               "C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7582:51",
               "Kernel._wrapSandboxCode (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8202:20)",
               "C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7582:25",
@@ -115,7 +153,7 @@
             "type": "aws:cdk:logicalId",
             "data": "Rule4C995B7F",
             "trace": [
-              "new Rule (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-oV2ouk\\node_modules\\@aws-cdk\\aws-events\\lib\\rule.js:25:26)",
+              "new Rule (C:\\Users\\ROY-PC3\\AppData\\Local\\Temp\\jsii-kernel-2cjQf6\\node_modules\\@aws-cdk\\aws-events\\lib\\rule.js:25:26)",
               "C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7749:49",
               "Kernel._wrapSandboxCode (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:8202:20)",
               "Kernel._create (C:\\Users\\ROY-PC3\\.virtualenvs\\radio-epg-PDjnosr4\\lib\\site-packages\\jsii\\_embedded\\jsii\\jsii-runtime.js:7749:26)",
