@@ -1,9 +1,11 @@
 # Radio EPG
 
-Good examples:
+Good info:
 * https://github.com/aws-samples/aws-cdk-examples/blob/master/python/lambda-cron/app.py
 * https://docs.aws.amazon.com/code-samples/latest/catalog/welcome.html
 * https://blog.codecentric.de/en/2019/10/aws-cdk-part-2-s3-bucket/
+* aws libraries docs: https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.core/Duration.html
+
 
 ### AWS setup
 * Install aws cli: https://docs.aws.amazon.com/cli/latest/userguide/install-windows.html
