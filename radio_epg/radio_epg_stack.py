@@ -35,11 +35,10 @@ class RadioEpgStack(core.Stack):
                                       removal_policy=core.RemovalPolicy.DESTROY)
 
 
-        topic = sns.Topic(scope=self, id="epg-update-fn-errors-topic",
-                          display_name="epg data current show updater errors topic")
+        fn_error_topic = sns.Topic(scope=self, id="epg-update-fn-errors-topic",
+                                   display_name="epg data current show updater errors topic")
 
-        topic.add_subscription(subs.EmailSubscription("roy.benyosef@gmail.com"))
-        snsAction = SnsAction(topic)
+        fn_error_topic.add_subscription(subs.EmailSubscription("roy.benyosef@gmail.com"))
 
         with open("show_updater_handler.py", encoding="utf8") as fp:
             handler_code = fp.read()
@@ -61,19 +60,15 @@ class RadioEpgStack(core.Stack):
         # See https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html
         rule = events.Rule(
             self, "Rule",
-            schedule=events.Schedule.rate(Duration.minutes(5))
+            schedule=events.Schedule.rate(Duration.minutes(1))
         )
         rule.add_target(targets.LambdaFunction(lambda_fn))
 
-        error_alarm = lambda_fn.metric_all_errors().create_alarm(self, "fn-error-alarm",
-                                                                 threshold=1,
-                                                                 alarm_name="epg-data-update-alarm",
-                                                                 evaluation_periods=1,
-                                                                 period=Duration.minutes(5))
+        fn_error_alarm = lambda_fn.metric_all_errors().create_alarm(self, "fn-error-alarm",
+                                                                    threshold=1,
+                                                                    alarm_name="epg-data-update-alarm",
+                                                                    evaluation_periods=1,
+                                                                    period=Duration.minutes(5))
 
-        snsAction.bind(self, error_alarm)
+        fn_error_alarm.add_alarm_action(SnsAction(fn_error_topic))
 
-        #error_alarm.add_alarm_action()
-        #error_alarm.add_alarm_action(self, topic)
-        #error_alarm.add_alarm_action(topic)
-        #cloudwatch.Alarm.add_alarm_action(error_alarm)
