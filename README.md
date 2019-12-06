@@ -1,17 +1,17 @@
 # Radio EPG
 
-Good info:
-* https://github.com/aws-samples/aws-cdk-examples/blob/master/python/lambda-cron/app.py
-* https://docs.aws.amazon.com/code-samples/latest/catalog/welcome.html
-* https://blog.codecentric.de/en/2019/10/aws-cdk-part-2-s3-bucket/
-* aws libraries docs: https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.core/Duration.html
-
+##Getting started:
 
 ### AWS setup
 * Install aws cli: https://docs.aws.amazon.com/cli/latest/userguide/install-windows.html
   * pip install awscli
 * configure aws cli: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
   * create admin user, create group use access key and secret in 'aws configure' command
+* test awscli with 'aws -v'
+
+### Python
+* install python 3.7 (cdk has a bug with 3.8: https://github.com/aws/aws-cdk/issues/4699)
+* update pip: 'pip install --upgrade pip'
 
 ### CDK 
 see: https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html
@@ -19,11 +19,18 @@ see: https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html
 * install nodejs (add to path)
 * install cdk: 'npm install -g aws-cdk'
 * init the project: cdk init --language python
-* install pipenv: pip install pipenv
-* run pipenv install
-* pipenv shell
 
-### CDK Notes
+### EPG project
+* clone this repo ('git clonse https://github.com/roybenyosef/radio-epg.git')
+* create an activate your python virtual env however you like to. under windows you can do this:
+  * python -m venv .venv
+  * run '.venv\scripts\activate' (run deactivate to exit the venv)
+* install all dependencies with: 'pip install -r requirements.txt'
+* check that everything is ok by running 'cdk synth' which will synthesize your expected Cloudformation yaml
+* start hacking!
+* Note: kill your env with 'cdk destroy'
+
+### CDK Notes (From initializing a project with cdk)
 
 # Welcome to your CDK Python project!
 
@@ -84,12 +91,10 @@ command.
 Enjoy!
 
 
-## In the CDK project
-* 
-* install boto3: pipenv install boto3
-* pipenv didn't work well, installed with pip: aws_s3, aws_lambda
-* pip install aws_cdk.aws_apigateway aws_cdk.aws_lambda aws_cdk.aws_s3
-* pip install aws-cdk.aws-events-targets
+## Useful links:
+* https://github.com/aws-samples/aws-cdk-examples/blob/master/python/lambda-cron/app.py
+* https://docs.aws.amazon.com/code-samples/latest/catalog/welcome.html
+* https://blog.codecentric.de/en/2019/10/aws-cdk-part-2-s3-bucket/
+* aws libraries docs: https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.core/Duration.html
 * implement function according to: https://github.com/aws-samples/aws-cdk-examples/blob/master/python/lambda-cron/app.py
-* kill env: cdk destroy
 
