@@ -31,6 +31,12 @@
                         }
                       ]
                     },
+                    "publicAccessBlockConfiguration": {
+                      "blockPublicAcls": true,
+                      "blockPublicPolicy": true,
+                      "ignorePublicAcls": true,
+                      "restrictPublicBuckets": true
+                    },
                     "versioningConfiguration": {
                       "status": "Enabled"
                     }
@@ -98,6 +104,42 @@
                           ],
                           "Version": "2012-10-17"
                         }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "epg-update-fn-errors-topic": {
+            "id": "epg-update-fn-errors-topic",
+            "path": "radio-epg/epg-update-fn-errors-topic",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "radio-epg/epg-update-fn-errors-topic/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::SNS::Topic",
+                  "aws:cdk:cloudformation:props": {
+                    "displayName": "epg data current show updater errors topic"
+                  }
+                }
+              },
+              "roy.benyosef@gmail.com": {
+                "id": "roy.benyosef@gmail.com",
+                "path": "radio-epg/epg-update-fn-errors-topic/roy.benyosef@gmail.com",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "radio-epg/epg-update-fn-errors-topic/roy.benyosef@gmail.com/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::SNS::Subscription",
+                      "aws:cdk:cloudformation:props": {
+                        "protocol": "email",
+                        "topicArn": {
+                          "Ref": "epgupdatefnerrorstopicCC45BF3D"
+                        },
+                        "endpoint": "roy.benyosef@gmail.com"
                       }
                     }
                   }
@@ -246,7 +288,7 @@
                   "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
                   "aws:cdk:cloudformation:props": {
                     "code": {
-                      "zipFile": "import os\nimport json\nimport boto3\nfrom botocore.exceptions import ClientError\n\nS3 = boto3.client('s3')\n\n\ndef main(event, context):\n    try:\n        response = S3.get_object(Bucket=os.environ['DATA_BUCKET_NAME'], Key='epg_data.json')\n        file_content = json.loads(response['Body'].read())\n        print(f'File content: {file_content}')\n\n        out_data = file_content[0]['epg']['Sun'][0]\n        S3.put_object(Body=out_data, Bucket=os.environ['OUT_BUCKET_NAME'], Key='epg.json')\n\n    except ClientError as e:\n        raise\n"
+                      "zipFile": "import os\nimport json\nimport boto3\nfrom botocore.exceptions import ClientError\n\nS3 = boto3.client('s3')\n\n\ndef main(event, context):\n    try:\n        response = S3.get_object(Bucket=os.environ['DATA_BUCKET_NAME'], Key='epg_data.json')\n        file_content = json.loads(response['Body'].read())\n        print(f'File content: {file_content}')\n\n        out_data = file_content[0]['epg']['Sun'][0]\n        S3.put_object(Body=str(out_data), Bucket=os.environ['OUT_BUCKET_NAME'], Key='epg_out.json')\n\n    except ClientError as e:\n        raise\n"
                     },
                     "handler": "index.main",
                     "role": {
@@ -304,7 +346,7 @@
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::Events::Rule",
                   "aws:cdk:cloudformation:props": {
-                    "scheduleExpression": "cron(0/5 * ? * * *)",
+                    "scheduleExpression": "rate(5 minutes)",
                     "state": "ENABLED",
                     "targets": [
                       {
@@ -317,6 +359,29 @@
                         }
                       }
                     ]
+                  }
+                }
+              }
+            }
+          },
+          "fn-error-alarm": {
+            "id": "fn-error-alarm",
+            "path": "radio-epg/fn-error-alarm",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "radio-epg/fn-error-alarm/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::CloudWatch::Alarm",
+                  "aws:cdk:cloudformation:props": {
+                    "comparisonOperator": "GreaterThanOrEqualToThreshold",
+                    "evaluationPeriods": 1,
+                    "alarmName": "epg-data-update-alarm",
+                    "metricName": "Errors",
+                    "namespace": "AWS/Lambda",
+                    "period": 300,
+                    "statistic": "Sum",
+                    "threshold": 1
                   }
                 }
               }

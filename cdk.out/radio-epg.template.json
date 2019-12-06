@@ -12,6 +12,12 @@
             }
           ]
         },
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": true
+        },
         "VersioningConfiguration": {
           "Status": "Enabled"
         }
@@ -66,6 +72,28 @@
       },
       "Metadata": {
         "aws:cdk:path": "radio-epg/EpgOutBucket/Policy/Resource"
+      }
+    },
+    "epgupdatefnerrorstopicCC45BF3D": {
+      "Type": "AWS::SNS::Topic",
+      "Properties": {
+        "DisplayName": "epg data current show updater errors topic"
+      },
+      "Metadata": {
+        "aws:cdk:path": "radio-epg/epg-update-fn-errors-topic/Resource"
+      }
+    },
+    "epgupdatefnerrorstopicroybenyosefgmailcomD8ADF422": {
+      "Type": "AWS::SNS::Subscription",
+      "Properties": {
+        "Protocol": "email",
+        "TopicArn": {
+          "Ref": "epgupdatefnerrorstopicCC45BF3D"
+        },
+        "Endpoint": "roy.benyosef@gmail.com"
+      },
+      "Metadata": {
+        "aws:cdk:path": "radio-epg/epg-update-fn-errors-topic/roy.benyosef@gmail.com/Resource"
       }
     },
     "SingletonServiceRoleDDD815CD": {
@@ -188,7 +216,7 @@
       "Type": "AWS::Lambda::Function",
       "Properties": {
         "Code": {
-          "ZipFile": "import os\nimport json\nimport boto3\nfrom botocore.exceptions import ClientError\n\nS3 = boto3.client('s3')\n\n\ndef main(event, context):\n    try:\n        response = S3.get_object(Bucket=os.environ['DATA_BUCKET_NAME'], Key='epg_data.json')\n        file_content = json.loads(response['Body'].read())\n        print(f'File content: {file_content}')\n\n        out_data = file_content[0]['epg']['Sun'][0]\n        S3.put_object(Body=out_data, Bucket=os.environ['OUT_BUCKET_NAME'], Key='epg.json')\n\n    except ClientError as e:\n        raise\n"
+          "ZipFile": "import os\nimport json\nimport boto3\nfrom botocore.exceptions import ClientError\n\nS3 = boto3.client('s3')\n\n\ndef main(event, context):\n    try:\n        response = S3.get_object(Bucket=os.environ['DATA_BUCKET_NAME'], Key='epg_data.json')\n        file_content = json.loads(response['Body'].read())\n        print(f'File content: {file_content}')\n\n        out_data = file_content[0]['epg']['Sun'][0]\n        S3.put_object(Body=str(out_data), Bucket=os.environ['OUT_BUCKET_NAME'], Key='epg_out.json')\n\n    except ClientError as e:\n        raise\n"
         },
         "Handler": "index.main",
         "Role": {
@@ -242,7 +270,7 @@
     "Rule4C995B7F": {
       "Type": "AWS::Events::Rule",
       "Properties": {
-        "ScheduleExpression": "cron(0/5 * ? * * *)",
+        "ScheduleExpression": "rate(5 minutes)",
         "State": "ENABLED",
         "Targets": [
           {
@@ -258,6 +286,22 @@
       },
       "Metadata": {
         "aws:cdk:path": "radio-epg/Rule/Resource"
+      }
+    },
+    "fnerroralarm8372B2BF": {
+      "Type": "AWS::CloudWatch::Alarm",
+      "Properties": {
+        "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+        "EvaluationPeriods": 1,
+        "AlarmName": "epg-data-update-alarm",
+        "MetricName": "Errors",
+        "Namespace": "AWS/Lambda",
+        "Period": 300,
+        "Statistic": "Sum",
+        "Threshold": 1
+      },
+      "Metadata": {
+        "aws:cdk:path": "radio-epg/fn-error-alarm/Resource"
       }
     }
   }

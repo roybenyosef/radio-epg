@@ -13,7 +13,7 @@ def main(event, context):
         print(f'File content: {file_content}')
 
         out_data = file_content[0]['epg']['Sun'][0]
-        S3.put_object(Body=out_data, Bucket=os.environ['OUT_BUCKET_NAME'], Key='epg.json')
+        S3.put_object(Body=str(out_data), Bucket=os.environ['OUT_BUCKET_NAME'], Key='epg_out.json')
 
     except ClientError as e:
         raise
