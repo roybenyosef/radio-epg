@@ -20,6 +20,10 @@ see: https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html
 * install cdk: 'npm install -g aws-cdk'
 * init the project: cdk init --language python
 
+### Installing third-party dependencies
+cdk does NOT install the third party dependencies you may have.
+use this: https://gitlab.com/josef.stach/aws-cdk-lambda-asset/
+
 ### EPG project
 * clone this repo ('git clonse https://github.com/roybenyosef/radio-epg.git')
 * create an activate your python virtual env however you like to. under windows you can do this:
