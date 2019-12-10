@@ -21,7 +21,7 @@ class Config:
     out_bucket_name = 'epg-out-s3-bucket-42'
 
     # Notifications
-    email_recipient = 'roy.benyosef@gmail.com'
+    email_recipient = <YOUR EMAIL HERE AS STRING>
 
     # Update function
     update_function_rate = Duration.minutes(5)
