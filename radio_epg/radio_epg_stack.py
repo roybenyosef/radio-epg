@@ -45,7 +45,7 @@ class RadioEpgStack(core.Stack):
                                        bucket_name=epg_data_s3_bucket_name,
                                        versioned=True,
                                        lifecycle_rules=[data_bucket_lifecycle_rules],
-                                       removal_policy=core.RemovalPolicy.DESTROY,
+                                       removal_policy=core.RemovalPolicy.RETAIN,
                                        block_public_access=s3.BlockPublicAccess.BLOCK_ALL)
 
         epg_out_s3_bucket_name = Config.out_bucket_name
@@ -54,7 +54,7 @@ class RadioEpgStack(core.Stack):
                                       bucket_name=epg_out_s3_bucket_name,
                                       versioned=False,
                                       public_read_access=True,
-                                      removal_policy=core.RemovalPolicy.DESTROY)
+                                      removal_policy=core.RemovalPolicy.RETAIN)
 
         # Create Lambda functions
         with open("show_updater_handler.py", encoding="utf8") as fp:
