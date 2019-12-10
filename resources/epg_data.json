@@ -1,252 +1,1328 @@
 [
-	{
-		"stationName": "100fm",
-		"epg" : 
-		{
-			"Sun": [
-					{
-						"Time" : "0000-0100",
-						"Name" : "Top Hits",
-						"Description" : "אכלתי כל כך הרבה"
-					},
-					{
-						"Time" : "0100-0200",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0200-0000",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					}
-			],
-			"Mon": [
-					{
-						"Time" : "0000-0100",
-						"Name" : "Top Hits",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0100-0200",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0200-0000",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					}
-			],
-			"Tue": [
-					{
-						"Time" : "0000-0100",
-						"Name" : "Top Hits",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0100-0200",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0200-0000",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					}
-			],
-			"Wed": [
-					{
-						"Time" : "0000-0100",
-						"Name" : "Top Hits",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0100-0200",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0200-0000",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					}
-			],
-			"Thu": [
-					{
-						"Time" : "0000-0100",
-						"Name" : "Top Hits",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0100-0200",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0200-0000",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					}
-			],
-			"Fri": [
-					{
-						"Time" : "0000-0100",
-						"Name" : "Top Hits",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0100-0200",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0200-0000",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					}
-			],
-			"Sat": [
-					{
-						"Time" : "0000-0100",
-						"Name" : "Top Hits",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0100-0200",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0200-0000",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					}
-			]
-		}
-	},
-	{
-		"stationName": "91fm",
-		"epg" : 
-		{
-			"Sun": [
-					{
-						"Time" : "0000-0100",
-						"Name" : "Top Hits",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0100-0200",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0200-0000",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					}
-			],
-			"Mon": [
-					{
-						"Time" : "0000-0100",
-						"Name" : "Top Hits",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0100-0200",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0200-0000",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					}
-			],
-			"Tue": [
-					{
-						"Time" : "0000-0100",
-						"Name" : "Top Hits",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0100-0200",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0200-0000",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					}
-			],
-			"Wed": [
-					{
-						"Time" : "0000-0100",
-						"Name" : "Top Hits",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0100-0200",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0200-0000",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					}
-			],
-			"Thu": [
-					{
-						"Time" : "0000-0100",
-						"Name" : "Top Hits",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0100-0200",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0200-0000",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					}
-			],
-			"Fri": [
-					{
-						"Time" : "0000-0100",
-						"Name" : "Top Hits",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0100-0200",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0200-0000",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					}
-			],
-			"Sat": [
-					{
-						"Time" : "0000-0100",
-						"Name" : "Top Hits",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0100-0200",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					},
-					{
-						"Time" : "0200-0000",
-						"Name" : "Top Hits 2",
-						"Description" : "abc"
-					}
-			]
-		}
-	}
+    {
+        "stationName": "100fm",
+        "epg": {
+            "Sun": [{
+                    "StartTime": "0000",
+                    "Duration": "60",
+                    "Name": "מדברים אהבה",
+                    "DJ": " איריס בראון",
+                    "Description": "העצות הטובות ביותר ללכל מה שמציק לכם בזוגות, במשפחה או ביחסים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0100",
+                    "Duration": "240",
+                    "Name": "NIGHT FLIGHT",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0500",
+                    "Duration": "60",
+                    "Name": "כחול לבן",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0600",
+                    "Duration": "60",
+                    "Name": "מוסיקה",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0700",
+                    "Duration": "120",
+                    "Name": "בוקר חדש",
+                    "DJ": " שירה זהבי",
+                    "Description": "פותחים את הבוקר עם רה זהבי",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0900",
+                    "Duration": "180",
+                    "Name": "אהבה פלוס",
+                    "DJ": " ג'ני בלום",
+                    "Description": "הקדשות שירים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1200",
+                    "Duration": "180",
+                    "Name": "מנהרת הזמן",
+                    "DJ": " ירון אשבל",
+                    "Description": "להיטים משנות ה 70,80,90",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1500",
+                    "Duration": "120",
+                    "Name": "VIP",
+                    "DJ": " מושיקו שטרן",
+                    "Description": "ראיונות אישיים עם האומנים המובילים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1700",
+                    "Duration": "60",
+                    "Name": "TWILIGHT TIME",
+                    "DJ": " ",
+                    "Description": "נוסטלגיה",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1800",
+                    "Duration": "60",
+                    "Name": "VOICE OF PEACE",
+                    "DJ": " מייק ברנד, טים שפרד, גיל קציר",
+                    "Description": "מוןסיקה נוסטלגית עם שדרני קול השלום המקוריים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1900",
+                    "Duration": "60",
+                    "Name": "אביב באוויר",
+                    "DJ": " יקיר אביב",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2000",
+                    "Duration": "120",
+                    "Name": "סלקט",
+                    "DJ": " הדר תדמור",
+                    "Description": "בחירות שירים של המאזינים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2200",
+                    "Duration": "120",
+                    "Name": "SMASH",
+                    "DJ": " שלומי קאופמן",
+                    "Description": "שעתיים של רמיקסים לוהטים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }
+            ],
+            "Mon": [{
+                    "StartTime": "0000",
+                    "Duration": "60",
+                    "Name": "נירו בחצות",
+                    "DJ": " נירו לוי",
+                    "Description": "שיחות עם מאזינים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0100",
+                    "Duration": "240",
+                    "Name": "NIGHT FLIGHT",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0500",
+                    "Duration": "60",
+                    "Name": "כחול לבן",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },{
+                    "StartTime": "0600",
+                    "Duration": "60",
+                    "Name": "מוסיקה",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0700",
+                    "Duration": "120",
+                    "Name": "בוקר חדש",
+                    "DJ": " שירה זהבי",
+                    "Description": "פותחים את הבוקר עם רה זהבי",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0900",
+                    "Duration": "180",
+                    "Name": "אהבה פלוס",
+                    "DJ": " ג'ני בלום",
+                    "Description": "הקדשות שירים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1200",
+                    "Duration": "180",
+                    "Name": "מנהרת הזמן",
+                    "DJ": " ירון אשבל",
+                    "Description": "להיטים משנות ה 70,80,90",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1500",
+                    "Duration": "120",
+                    "Name": "VIP",
+                    "DJ": " מושיקו שטרן",
+                    "Description": "ראיונות אישיים עם האומנים המובילים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1700",
+                    "Duration": "60",
+                    "Name": "TWILIGHT TIME",
+                    "DJ": " ",
+                    "Description": "נוסטלגיה",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1800",
+                    "Duration": "60",
+                    "Name": "VOICE OF PEACE",
+                    "DJ": " מייק ברנד, טים שפרד, גיל קציר",
+                    "Description": "מוןסיקה נוסטלגית עם שדרני קול השלום המקוריים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1900",
+                    "Duration": "60",
+                    "Name": "אביב באוויר",
+                    "DJ": " יקיר אביב",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2000",
+                    "Duration": "120",
+                    "Name": "סלקט",
+                    "DJ": " הדר תדמור",
+                    "Description": "בחירות שירים של המאזינים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2200",
+                    "Duration": "120",
+                    "Name": "SMASH",
+                    "DJ": " שלומי קאופמן",
+                    "Description": "שעתיים של רמיקסים לוהטים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }
+            ],
+            "Tue": [{
+                    "StartTime": "0000",
+                    "Duration": "60",
+                    "Name": "RADIOS GOLD",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0100",
+                    "Duration": "240",
+                    "Name": "NIGHT FLIGHT",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0500",
+                    "Duration": "60",
+                    "Name": "כחול לבן",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },{
+                    "StartTime": "0600",
+                    "Duration": "60",
+                    "Name": "מוסיקה",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0700",
+                    "Duration": "120",
+                    "Name": "בוקר חדש",
+                    "DJ": " שירה זהבי",
+                    "Description": "פותחים את הבוקר עם רה זהבי",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0900",
+                    "Duration": "180",
+                    "Name": "אהבה פלוס",
+                    "DJ": " ג'ני בלום",
+                    "Description": "הקדשות שירים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1200",
+                    "Duration": "180",
+                    "Name": "מנהרת הזמן",
+                    "DJ": " ירון אשבל",
+                    "Description": "להיטים משנות ה 70,80,90",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1500",
+                    "Duration": "120",
+                    "Name": "VIP",
+                    "DJ": " מושיקו שטרן",
+                    "Description": "ראיונות אישיים עם האומנים המובילים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1700",
+                    "Duration": "60",
+                    "Name": "TWILIGHT TIME",
+                    "DJ": " ",
+                    "Description": "נוסטלגיה",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1800",
+                    "Duration": "60",
+                    "Name": "VOICE OF PEACE",
+                    "DJ": " מייק ברנד, טים שפרד, גיל קציר",
+                    "Description": "מוןסיקה נוסטלגית עם שדרני קול השלום המקוריים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1900",
+                    "Duration": "60",
+                    "Name": "אביב באוויר",
+                    "DJ": " יקיר אביב",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2000",
+                    "Duration": "120",
+                    "Name": "סלקט",
+                    "DJ": " הדר תדמור",
+                    "Description": "בחירות שירים של המאזינים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2200",
+                    "Duration": "120",
+                    "Name": "SMASH",
+                    "DJ": " שלומי קאופמן",
+                    "Description": "שעתיים של רמיקסים לוהטים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }
+            ],
+            "Wed": [{
+                    "StartTime": "0000",
+                    "Duration": "60",
+                    "Name": "RADIOS GOLD",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0100",
+                    "Duration": "60",
+                    "Name": "A state of trance - Armin Van Buuren",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+				"StartTime": "0200",
+                    "Duration": "180",
+                    "Name": "NIGHT FLIGHT",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },{
+                    "StartTime": "0500",
+                    "Duration": "60",
+                    "Name": "כחול לבן",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },{
+                    "StartTime": "0600",
+                    "Duration": "60",
+                    "Name": "מוסיקה",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0700",
+                    "Duration": "120",
+                    "Name": "בוקר חדש",
+                    "DJ": " שירה זהבי",
+                    "Description": "פותחים את הבוקר עם רה זהבי",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0900",
+                    "Duration": "180",
+                    "Name": "אהבה פלוס",
+                    "DJ": " ג'ני בלום",
+                    "Description": "הקדשות שירים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1200",
+                    "Duration": "180",
+                    "Name": "מנהרת הזמן",
+                    "DJ": " ירון אשבל",
+                    "Description": "להיטים משנות ה 70,80,90",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1500",
+                    "Duration": "120",
+                    "Name": "VIP",
+                    "DJ": " מושיקו שטרן",
+                    "Description": "ראיונות אישיים עם האומנים המובילים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1700",
+                    "Duration": "60",
+                    "Name": "TWILIGHT TIME",
+                    "DJ": " ",
+                    "Description": "נוסטלגיה",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1800",
+                    "Duration": "60",
+                    "Name": "VOICE OF PEACE",
+                    "DJ": " מייק ברנד, טים שפרד, גיל קציר",
+                    "Description": "מוןסיקה נוסטלגית עם שדרני קול השלום המקוריים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1900",
+                    "Duration": "60",
+                    "Name": "אביב באוויר",
+                    "DJ": " יקיר אביב",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2000",
+                    "Duration": "120",
+                    "Name": "סלקט",
+                    "DJ": " הדר תדמור",
+                    "Description": "בחירות שירים של המאזינים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2200",
+                    "Duration": "120",
+                    "Name": "SMASH",
+                    "DJ": " שלומי קאופמן",
+                    "Description": "שעתיים של רמיקסים לוהטים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }
+            ],
+            "Thu": [{
+                    "StartTime": "0000",
+                    "Duration": "60",
+                    "Name": "RADIOS GOLD",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0100",
+                    "Duration": "240",
+                    "Name": "NIGHT FLIGHT",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0500",
+                    "Duration": "60",
+                    "Name": "כחול לבן",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },{
+                    "StartTime": "0600",
+                    "Duration": "60",
+                    "Name": "מוסיקה",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0700",
+                    "Duration": "120",
+                    "Name": "בוקר חדש",
+                    "DJ": " שירה זהבי",
+                    "Description": "פותחים את הבוקר עם רה זהבי",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0900",
+                    "Duration": "180",
+                    "Name": "אהבה פלוס",
+                    "DJ": " ג'ני בלום",
+                    "Description": "הקדשות שירים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1200",
+                    "Duration": "180",
+                    "Name": "מנהרת הזמן",
+                    "DJ": " ירון אשבל",
+                    "Description": "להיטים משנות ה 70,80,90",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1500",
+                    "Duration": "120",
+                    "Name": "VIP",
+                    "DJ": " מושיקו שטרן",
+                    "Description": "ראיונות אישיים עם האומנים המובילים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1700",
+                    "Duration": "60",
+                    "Name": "TWILIGHT TIME",
+                    "DJ": " ",
+                    "Description": "נוסטלגיה",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1800",
+                    "Duration": "60",
+                    "Name": "VOICE OF PEACE",
+                    "DJ": " מייק ברנד, טים שפרד, גיל קציר",
+                    "Description": "מוןסיקה נוסטלגית עם שדרני קול השלום המקוריים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1900",
+                    "Duration": "120",
+                    "Name": "RADIOS GOLD",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2100",
+                    "Duration": "120",
+                    "Name": "BASE",
+                    "DJ": "מומי לוי",
+                    "Description": " מוסיקה שחורה עם מומי לוי",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2300",
+                    "Duration": "60",
+                    "Name": " Clublife - Tiesto",
+                    "DJ": " ",
+                    "Description": "טייסטו",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }
+            ],
+            "Fri": [{
+                    "StartTime": "0000",
+                    "Duration": "180",
+                    "Name": " Clublife - Tiesto",
+                    "DJ": " ",
+                    "Description": "טייסטו",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0300",
+                    "Duration": "180",
+                    "Name": "PARTY WEEKEND",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0600",
+                    "Duration": "120",
+                    "Name": "NON STOP MUSIC",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0800",
+                    "Duration": "120",
+                    "Name": " חותמים שבוע",
+                    "DJ": " יורם מוקדי",
+                    "Description": " ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1000",
+                    "Duration": "120",
+                    "Name": "הנבחרים",
+                    "DJ": "דוד בן בסט",
+                    "Description": "תוכנית הפוליטיקה היחידה בישראל",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1200",
+                    "Duration": "120",
+                    "Name": "חולם בספרדית",
+                    "DJ": " קיקה סמואל",
+                    "Description": " תוכנית הדגל של המוסיקה הלטינית בישראל!",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1400",
+                    "Duration": "60",
+                    "Name": " NON STOP MUSIC",
+                    "DJ": " ",
+                    "Description": " מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1500",
+                    "Duration": "60",
+                    "Name": " כבוד העוד ",
+                    "DJ": " עורך דין ליאור טומשין",
+                    "Description": " יעוץ משפטי אישי",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1600",
+                    "Duration": "60",
+                    "Name": "PARTY WEEKEND",
+                    "DJ": " ",
+                    "Description": " מוסיקה",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1700",
+                    "Duration": "180",
+                    "Name": " עברי לפני שבת",
+                    "DJ": " ",
+                    "Description": " שירים עבריים נוסטלגיים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "2000",
+                    "Duration": "120",
+                    "Name": " TOP SELECT",
+                    "DJ": " ",
+                    "Description": " מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "2200",
+                    "Duration": "120",
+                    "Name": " LINE OUT",
+                    "DJ": " דור דקל",
+                    "Description": "המוסיקה האלקטרונית הכי שווה, הדי ג'ייז המובילים בעולם והשמעות בכורה בלעדיות. ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }
+            ],
+            "Sat": [{
+                    "StartTime": "0000",
+                    "Duration": "60",
+                    "Name": " BASE MIX",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+				{
+                    "StartTime": "0100",
+                    "Duration": "60",
+                    "Name": " NIGHT FLIGHT",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0200",
+                    "Duration": "60",
+                    "Name": " SMASH THE HOUSE",
+                    "DJ": "",
+                    "Description": "מוסיקה ברצף ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0300",
+                    "Duration": "60",
+                    "Name": "ספינינג רקורדס",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0400",
+                    "Duration": "180",
+                    "Name": "NON STOP MUSIC",
+                    "DJ": "",
+                    "Description": "",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0700",
+                    "Duration": "120",
+                    "Name": " אלה היו הימים",
+                    "DJ": "רויטל עמית",
+                    "Description": "שירים לועזיים נוסטלגגים משנות ה 50 וה 60 ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0900",
+                    "Duration": "60",
+                    "Name": " סטלבותה של שבת",
+                    "DJ": "שי ורועי",
+                    "Description": " מוסיקה שילדים והורים הכי אוהבים ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1000",
+                    "Duration": "120",
+                    "Name": " אהבה לטינית ",
+                    "DJ": "קיקה סמואל",
+                    "Description": "שעתיים של מוסיקה לטינית רומנטית ויפה ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1200",
+                    "Duration": "450",
+                    "Name": " RADIOS GOLD",
+                    "DJ": "",
+                    "Description": "מוסיקה ברצף ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "2100",
+                    "Duration": "120",
+                    "Name": " TOP HITS",
+                    "DJ": "אבי שמי",
+                    "Description": "כל הלהיטים החמים ביותר שמרעידים את הרחבות ומקפיצים את המסיבות השוות",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "2300",
+                    "Duration": "60",
+                    "Name": " החיים היפים",
+                    "DJ": "דר דב קליין",
+                    "Description": "מענה על שאלות בנושא ניתוחם פלסטיים, אסתטיקה, טיפוח ויופי.",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }
+            ]
+        }
+    },
+    {
+        "stationName": "91fm",
+        "epg": {
+            "Sun": [{
+                    "StartTime": "0000",
+                    "Duration": "60",
+                    "Name": "מדברים אהבה",
+                    "DJ": " איריס בראון",
+                    "Description": "העצות הטובות ביותר ללכל מה שמציק לכם בזוגות, במשפחה או ביחסים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0100",
+                    "Duration": "240",
+                    "Name": "NIGHT FLIGHT",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0500",
+                    "Duration": "60",
+                    "Name": "כחול לבן",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0600",
+                    "Duration": "60",
+                    "Name": "מוסיקה",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0700",
+                    "Duration": "120",
+                    "Name": "בוקר חדש",
+                    "DJ": " שירה זהבי",
+                    "Description": "פותחים את הבוקר עם רה זהבי",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0900",
+                    "Duration": "180",
+                    "Name": "אהבה פלוס",
+                    "DJ": " ג'ני בלום",
+                    "Description": "הקדשות שירים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1200",
+                    "Duration": "180",
+                    "Name": "מנהרת הזמן",
+                    "DJ": " ירון אשבל",
+                    "Description": "להיטים משנות ה 70,80,90",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1500",
+                    "Duration": "120",
+                    "Name": "VIP",
+                    "DJ": " מושיקו שטרן",
+                    "Description": "ראיונות אישיים עם האומנים המובילים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1700",
+                    "Duration": "60",
+                    "Name": "TWILIGHT TIME",
+                    "DJ": " ",
+                    "Description": "נוסטלגיה",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1800",
+                    "Duration": "60",
+                    "Name": "VOICE OF PEACE",
+                    "DJ": " מייק ברנד, טים שפרד, גיל קציר",
+                    "Description": "מוןסיקה נוסטלגית עם שדרני קול השלום המקוריים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1900",
+                    "Duration": "60",
+                    "Name": "אביב באוויר",
+                    "DJ": " יקיר אביב",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2000",
+                    "Duration": "120",
+                    "Name": "סלקט",
+                    "DJ": " הדר תדמור",
+                    "Description": "בחירות שירים של המאזינים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2200",
+                    "Duration": "120",
+                    "Name": "SMASH",
+                    "DJ": " שלומי קאופמן",
+                    "Description": "שעתיים של רמיקסים לוהטים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }
+            ],
+            "Mon": [{
+                    "StartTime": "0000",
+                    "Duration": "60",
+                    "Name": "נירו בחצות",
+                    "DJ": " נירו לוי",
+                    "Description": "שיחות עם מאזינים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0100",
+                    "Duration": "240",
+                    "Name": "NIGHT FLIGHT",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0500",
+                    "Duration": "60",
+                    "Name": "כחול לבן",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },{
+                    "StartTime": "0600",
+                    "Duration": "60",
+                    "Name": "מוסיקה",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0700",
+                    "Duration": "120",
+                    "Name": "בוקר חדש",
+                    "DJ": " שירה זהבי",
+                    "Description": "פותחים את הבוקר עם רה זהבי",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0900",
+                    "Duration": "180",
+                    "Name": "אהבה פלוס",
+                    "DJ": " ג'ני בלום",
+                    "Description": "הקדשות שירים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1200",
+                    "Duration": "180",
+                    "Name": "מנהרת הזמן",
+                    "DJ": " ירון אשבל",
+                    "Description": "להיטים משנות ה 70,80,90",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1500",
+                    "Duration": "120",
+                    "Name": "VIP",
+                    "DJ": " מושיקו שטרן",
+                    "Description": "ראיונות אישיים עם האומנים המובילים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1700",
+                    "Duration": "60",
+                    "Name": "TWILIGHT TIME",
+                    "DJ": " ",
+                    "Description": "נוסטלגיה",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1800",
+                    "Duration": "60",
+                    "Name": "VOICE OF PEACE",
+                    "DJ": " מייק ברנד, טים שפרד, גיל קציר",
+                    "Description": "מוןסיקה נוסטלגית עם שדרני קול השלום המקוריים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1900",
+                    "Duration": "60",
+                    "Name": "אביב באוויר",
+                    "DJ": " יקיר אביב",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2000",
+                    "Duration": "120",
+                    "Name": "סלקט",
+                    "DJ": " הדר תדמור",
+                    "Description": "בחירות שירים של המאזינים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2200",
+                    "Duration": "120",
+                    "Name": "SMASH",
+                    "DJ": " שלומי קאופמן",
+                    "Description": "שעתיים של רמיקסים לוהטים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }
+            ],
+            "Tue": [{
+                    "StartTime": "0000",
+                    "Duration": "60",
+                    "Name": "RADIOS GOLD",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0100",
+                    "Duration": "240",
+                    "Name": "NIGHT FLIGHT",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0500",
+                    "Duration": "60",
+                    "Name": "כחול לבן",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },{
+                    "StartTime": "0600",
+                    "Duration": "60",
+                    "Name": "מוסיקה",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0700",
+                    "Duration": "120",
+                    "Name": "בוקר חדש",
+                    "DJ": " שירה זהבי",
+                    "Description": "פותחים את הבוקר עם רה זהבי",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0900",
+                    "Duration": "180",
+                    "Name": "אהבה פלוס",
+                    "DJ": " ג'ני בלום",
+                    "Description": "הקדשות שירים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1200",
+                    "Duration": "180",
+                    "Name": "מנהרת הזמן",
+                    "DJ": " ירון אשבל",
+                    "Description": "להיטים משנות ה 70,80,90",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1500",
+                    "Duration": "120",
+                    "Name": "VIP",
+                    "DJ": " מושיקו שטרן",
+                    "Description": "ראיונות אישיים עם האומנים המובילים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1700",
+                    "Duration": "60",
+                    "Name": "TWILIGHT TIME",
+                    "DJ": " ",
+                    "Description": "נוסטלגיה",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1800",
+                    "Duration": "60",
+                    "Name": "VOICE OF PEACE",
+                    "DJ": " מייק ברנד, טים שפרד, גיל קציר",
+                    "Description": "מוןסיקה נוסטלגית עם שדרני קול השלום המקוריים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1900",
+                    "Duration": "60",
+                    "Name": "אביב באוויר",
+                    "DJ": " יקיר אביב",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2000",
+                    "Duration": "120",
+                    "Name": "סלקט",
+                    "DJ": " הדר תדמור",
+                    "Description": "בחירות שירים של המאזינים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2200",
+                    "Duration": "120",
+                    "Name": "SMASH",
+                    "DJ": " שלומי קאופמן",
+                    "Description": "שעתיים של רמיקסים לוהטים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }
+            ],
+            "Wed": [{
+                    "StartTime": "0000",
+                    "Duration": "60",
+                    "Name": "RADIOS GOLD",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0100",
+                    "Duration": "60",
+                    "Name": "A state of trance - Armin Van Buuren",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+				"StartTime": "0200",
+                    "Duration": "180",
+                    "Name": "NIGHT FLIGHT",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },{
+                    "StartTime": "0500",
+                    "Duration": "60",
+                    "Name": "כחול לבן",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },{
+                    "StartTime": "0600",
+                    "Duration": "60",
+                    "Name": "מוסיקה",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0700",
+                    "Duration": "120",
+                    "Name": "בוקר חדש",
+                    "DJ": " שירה זהבי",
+                    "Description": "פותחים את הבוקר עם רה זהבי",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0900",
+                    "Duration": "180",
+                    "Name": "אהבה פלוס",
+                    "DJ": " ג'ני בלום",
+                    "Description": "הקדשות שירים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1200",
+                    "Duration": "180",
+                    "Name": "מנהרת הזמן",
+                    "DJ": " ירון אשבל",
+                    "Description": "להיטים משנות ה 70,80,90",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1500",
+                    "Duration": "120",
+                    "Name": "VIP",
+                    "DJ": " מושיקו שטרן",
+                    "Description": "ראיונות אישיים עם האומנים המובילים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1700",
+                    "Duration": "60",
+                    "Name": "TWILIGHT TIME",
+                    "DJ": " ",
+                    "Description": "נוסטלגיה",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1800",
+                    "Duration": "60",
+                    "Name": "VOICE OF PEACE",
+                    "DJ": " מייק ברנד, טים שפרד, גיל קציר",
+                    "Description": "מוןסיקה נוסטלגית עם שדרני קול השלום המקוריים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1900",
+                    "Duration": "60",
+                    "Name": "אביב באוויר",
+                    "DJ": " יקיר אביב",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2000",
+                    "Duration": "120",
+                    "Name": "סלקט",
+                    "DJ": " הדר תדמור",
+                    "Description": "בחירות שירים של המאזינים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2200",
+                    "Duration": "120",
+                    "Name": "SMASH",
+                    "DJ": " שלומי קאופמן",
+                    "Description": "שעתיים של רמיקסים לוהטים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }
+            ],
+            "Thu": [{
+                    "StartTime": "0000",
+                    "Duration": "60",
+                    "Name": "RADIOS GOLD",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0100",
+                    "Duration": "240",
+                    "Name": "NIGHT FLIGHT",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0500",
+                    "Duration": "60",
+                    "Name": "כחול לבן",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },{
+                    "StartTime": "0600",
+                    "Duration": "60",
+                    "Name": "מוסיקה",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0700",
+                    "Duration": "120",
+                    "Name": "בוקר חדש",
+                    "DJ": " שירה זהבי",
+                    "Description": "פותחים את הבוקר עם רה זהבי",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "0900",
+                    "Duration": "180",
+                    "Name": "אהבה פלוס",
+                    "DJ": " ג'ני בלום",
+                    "Description": "הקדשות שירים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1200",
+                    "Duration": "180",
+                    "Name": "מנהרת הזמן",
+                    "DJ": " ירון אשבל",
+                    "Description": "להיטים משנות ה 70,80,90",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1500",
+                    "Duration": "120",
+                    "Name": "VIP",
+                    "DJ": " מושיקו שטרן",
+                    "Description": "ראיונות אישיים עם האומנים המובילים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1700",
+                    "Duration": "60",
+                    "Name": "TWILIGHT TIME",
+                    "DJ": " ",
+                    "Description": "נוסטלגיה",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1800",
+                    "Duration": "60",
+                    "Name": "VOICE OF PEACE",
+                    "DJ": " מייק ברנד, טים שפרד, גיל קציר",
+                    "Description": "מוןסיקה נוסטלגית עם שדרני קול השלום המקוריים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "1900",
+                    "Duration": "120",
+                    "Name": "RADIOS GOLD",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2100",
+                    "Duration": "120",
+                    "Name": "BASE",
+                    "DJ": "מומי לוי",
+                    "Description": " מוסיקה שחורה עם מומי לוי",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }, {
+                    "StartTime": "2300",
+                    "Duration": "60",
+                    "Name": " Clublife - Tiesto",
+                    "DJ": " ",
+                    "Description": "טייסטו",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }
+            ],
+            "Fri": [{
+                    "StartTime": "0000",
+                    "Duration": "180",
+                    "Name": " Clublife - Tiesto",
+                    "DJ": " ",
+                    "Description": "טייסטו",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0300",
+                    "Duration": "180",
+                    "Name": "PARTY WEEKEND",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0600",
+                    "Duration": "120",
+                    "Name": "NON STOP MUSIC",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0800",
+                    "Duration": "120",
+                    "Name": " חותמים שבוע",
+                    "DJ": " יורם מוקדי",
+                    "Description": " ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1000",
+                    "Duration": "120",
+                    "Name": "הנבחרים",
+                    "DJ": "דוד בן בסט",
+                    "Description": "תוכנית הפוליטיקה היחידה בישראל",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1200",
+                    "Duration": "120",
+                    "Name": "חולם בספרדית",
+                    "DJ": " קיקה סמואל",
+                    "Description": " תוכנית הדגל של המוסיקה הלטינית בישראל!",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1400",
+                    "Duration": "60",
+                    "Name": " NON STOP MUSIC",
+                    "DJ": " ",
+                    "Description": " מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1500",
+                    "Duration": "60",
+                    "Name": " כבוד העוד ",
+                    "DJ": " עורך דין ליאור טומשין",
+                    "Description": " יעוץ משפטי אישי",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1600",
+                    "Duration": "60",
+                    "Name": "PARTY WEEKEND",
+                    "DJ": " ",
+                    "Description": " מוסיקה",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1700",
+                    "Duration": "180",
+                    "Name": " עברי לפני שבת",
+                    "DJ": " ",
+                    "Description": " שירים עבריים נוסטלגיים",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "2000",
+                    "Duration": "120",
+                    "Name": " TOP SELECT",
+                    "DJ": " ",
+                    "Description": " מוסיקה ברצף",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "2200",
+                    "Duration": "120",
+                    "Name": " LINE OUT",
+                    "DJ": " דור דקל",
+                    "Description": "המוסיקה האלקטרונית הכי שווה, הדי ג'ייז המובילים בעולם והשמעות בכורה בלעדיות. ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }
+            ],
+            "Sat": [{
+                    "StartTime": "0000",
+                    "Duration": "60",
+                    "Name": " BASE MIX",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+				{
+                    "StartTime": "0100",
+                    "Duration": "60",
+                    "Name": " NIGHT FLIGHT",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0200",
+                    "Duration": "60",
+                    "Name": " SMASH THE HOUSE",
+                    "DJ": "",
+                    "Description": "מוסיקה ברצף ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0300",
+                    "Duration": "60",
+                    "Name": "ספינינג רקורדס",
+                    "DJ": " ",
+                    "Description": "מוסיקה ברצף ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0400",
+                    "Duration": "180",
+                    "Name": "NON STOP MUSIC",
+                    "DJ": "",
+                    "Description": "",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0700",
+                    "Duration": "120",
+                    "Name": " אלה היו הימים",
+                    "DJ": "רויטל עמית",
+                    "Description": "שירים לועזיים נוסטלגגים משנות ה 50 וה 60 ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "0900",
+                    "Duration": "60",
+                    "Name": " סטלבותה של שבת",
+                    "DJ": "שי ורועי",
+                    "Description": " מוסיקה שילדים והורים הכי אוהבים ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1000",
+                    "Duration": "120",
+                    "Name": " אהבה לטינית ",
+                    "DJ": "קיקה סמואל",
+                    "Description": "שעתיים של מוסיקה לטינית רומנטית ויפה ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "1200",
+                    "Duration": "450",
+                    "Name": " RADIOS GOLD",
+                    "DJ": "",
+                    "Description": "מוסיקה ברצף ",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "2100",
+                    "Duration": "120",
+                    "Name": " TOP HITS",
+                    "DJ": "אבי שמי",
+                    "Description": "כל הלהיטים החמים ביותר שמרעידים את הרחבות ומקפיצים את המסיבות השוות",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                },
+			{
+                    "StartTime": "2300",
+                    "Duration": "60",
+                    "Name": " החיים היפים",
+                    "DJ": "דר דב קליין",
+                    "Description": "מענה על שאלות בנושא ניתוחם פלסטיים, אסתטיקה, טיפוח ויופי.",
+                    "Picture": "http://fmplayer.co.il/img/pic.jpg"
+                }
+            ]
+        }
+    }
 ]
