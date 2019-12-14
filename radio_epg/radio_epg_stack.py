@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from aws_cdk import (
     core,
     aws_events as events,
@@ -5,11 +7,11 @@ from aws_cdk import (
     aws_lambda as lambda_,
     aws_events_targets as targets,
     aws_sns as sns,
-    aws_sns_subscriptions as subs,
-    aws_cloudwatch as cloudwatch
+    aws_sns_subscriptions as subs
 )
 from aws_cdk.aws_cloudwatch_actions import SnsAction
 from aws_cdk.core import Duration
+from aws_cdk_lambda_asset.zip_asset_code import ZipAssetCode
 
 
 class Config:
@@ -56,14 +58,17 @@ class RadioEpgStack(core.Stack):
                                       public_read_access=True,
                                       removal_policy=core.RemovalPolicy.RETAIN)
 
-        # Create Lambda functions
-        with open("show_updater_handler.py", encoding="utf8") as fp:
-            handler_code = fp.read()
+        # # Create Lambda functions
+        # with open("show_updater_handler.py", encoding="utf8") as fp:
+        #     handler_code = fp.read()
 
+        work_dir = Path(__file__).parents[1]
         lambda_fn = lambda_.Function(
-            self, "Singleton",
-            code=lambda_.InlineCode(handler_code),
-            handler="index.main",
+            self,
+            id="Singleton",
+            #code=lambda_.InlineCode(handler_code),
+            code=ZipAssetCode(work_dir=work_dir, include=['functions'], file_name='show_updater_fn.zip'),
+            handler="show_updater_handler.main",
             runtime=lambda_.Runtime.PYTHON_3_7,
             environment=dict(DATA_BUCKET_NAME=epg_data_s3_bucket.bucket_name,
                              OUT_BUCKET_NAME=epg_out_s3_bucket.bucket_name)

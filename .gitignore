@@ -154,3 +154,5 @@ fabric.properties
 cdk.context.json
 .cdk.staging/
 cdk.out/
+.build/
+*.zip
