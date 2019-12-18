@@ -10,6 +10,8 @@ from aws_cdk import (
     aws_sns_subscriptions as subs
 )
 from aws_cdk.aws_cloudwatch_actions import SnsAction
+from aws_cdk.aws_lambda_event_sources import S3EventSource
+from aws_cdk.aws_s3 import NotificationKeyFilter
 from aws_cdk.core import Duration
 from aws_cdk_lambda_asset.zip_asset_code import ZipAssetCode
 
@@ -101,6 +103,26 @@ class RadioEpgStack(core.Stack):
 
         fn_error_alarm.add_alarm_action(SnsAction(fn_error_topic))
 
+        with open("functions/epg_update_handler.py", encoding="utf8") as fp:
+            epg_update_handler_code = fp.read()
+
+        fn_epg_update = lambda_.Function(
+            self, "EpgUpdater",
+            code=lambda_.InlineCode(epg_update_handler_code),
+            handler="index.main",
+            runtime=lambda_.Runtime.PYTHON_3_7,
+            environment=dict(DATA_BUCKET_NAME=epg_data_s3_bucket.bucket_name,
+                             OUT_BUCKET_NAME=epg_out_s3_bucket.bucket_name))
+
+        # Grant permissions on buckets
+        epg_data_s3_bucket.grant_read(fn_epg_update.role)
+        epg_out_s3_bucket.grant_read_write(fn_epg_update.role)
+
+        data_bucket_created_event = S3EventSource(bucket=epg_data_s3_bucket,
+                                                  events=[s3.EventType.OBJECT_CREATED],
+                                                  filters=[NotificationKeyFilter(prefix='epg_data.json')])
+
+        fn_epg_update.add_event_source(data_bucket_created_event)
 
 
 

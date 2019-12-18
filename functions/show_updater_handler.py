@@ -18,8 +18,6 @@ def main(event, context):
 
         response = S3.get_object(Bucket=os.environ['DATA_BUCKET_NAME'], Key='epg_data.json')
         file_content = json.loads(response['Body'].read())
-        print(f'File content: {file_content}')
-
         get_epg_by_time(file_content, current_time, day_of_the_week, retry=True)
 
     except ClientError as e:
