@@ -102,3 +102,7 @@ Enjoy!
 * aws libraries docs: https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.core/Duration.html
 * implement function according to: https://github.com/aws-samples/aws-cdk-examples/blob/master/python/lambda-cron/app.py
 
+## CloudFront
+we use cloudFront to deliver the administrator web app, which is a simple static website that allows the user to get and update the epg json. 
+see https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/
+to serve your s3 stored static web site
