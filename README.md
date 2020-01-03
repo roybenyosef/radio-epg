@@ -106,3 +106,6 @@ Enjoy!
 we use cloudFront to deliver the administrator web app, which is a simple static website that allows the user to get and update the epg json. 
 see https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/
 to serve your s3 stored static web site
+In case you are seeing your update site, it is because cf uses cache for performance. you need to invalidate files.
+see: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html
+
