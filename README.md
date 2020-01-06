@@ -109,3 +109,6 @@ to serve your s3 stored static web site.<BR>
 In case you are seeing your update site, it is because cf uses cache for performance. you need to invalidate files.
 see: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html
 
+### Also see:
+* https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-enable-cognito-user-pool.html
+* https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-invoke-api-integrated-with-cognito-user-pool.html
