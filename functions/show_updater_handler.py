@@ -67,5 +67,5 @@ def write_xml(station_name, program):
     tree.SubElement(root, "image").text = program.get('Picture')
     tree_ = tree.ElementTree(root)
 
-    xml_str = tree.tostring(tree_.getroot(), encoding='utf8', method='xml')
+    xml_str = tree.tostring(tree_.getroot(), encoding='utf-8', method='xml')
     S3.put_object(Body=xml_str, Bucket=os.environ['OUT_BUCKET_NAME'], Key=f'{station_name}_epg.xml')
