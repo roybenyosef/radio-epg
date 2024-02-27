@@ -62,7 +62,7 @@ PyYAML = "^5.4"
 s3transfer = "^0.2.1"
 six = "^1.13.0"
 troposphere = "^2.5.3"
-urllib3 = "^1.25.7"
+urllib3 = "^1.25.8"
 typing-extensions = "^3.7.4"
 "aws-cdk.aws_lambda_event_sources" = "^1.19.0"
 
